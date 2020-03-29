@@ -76,7 +76,6 @@ const ContactUs = (props) => {
                 <RichText render={props.data.prismic.allContact_pages.edges[0].node.form_title} />
                 <RichText render={props.data.prismic.allContact_pages.edges[0].node.form_description} />
                 <Form 
-                    onSubmit={e => e.preventDefault()}
                     name="contact-us"
                     method="POST"
                     data-netlify="true"
