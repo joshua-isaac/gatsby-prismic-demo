@@ -37,7 +37,7 @@ const PriceItemWrapper = styled.div`
     }
 `
 
-function PriceItem({title, price, mostPopular, description}) {
+const PriceItem = ({title, price, mostPopular, description}) => {
     return (
         <PriceItemWrapper mostPopular={mostPopular}>
             {!!mostPopular &&
